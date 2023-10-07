@@ -1,12 +1,12 @@
 # BingoProgrammingTest
-Programming test
 The purpose of this test is to see what data structures and implementation is used to solve a logical problem.
+
+
+![image](https://github.com/FarahnazMokhtari/BingoProgrammingTest/assets/100504557/cdbf2721-e690-4f3c-9097-7962daf60d80)
 
 ![image](https://github.com/FarahnazMokhtari/BingoProgrammingTest/assets/100504557/0d4d4016-314f-4784-b000-4f1d73dbcdc1)
 
 ![image](https://github.com/FarahnazMokhtari/BingoProgrammingTest/assets/100504557/ea377204-887c-421a-8a85-158f122ad996)
-
-![Uploading image.png…]()
 
 Test Input data
 This is the test input data that is mentioned in the puzzle above. Just so it is easy to copy/paste input data into your code, when building your solution.
