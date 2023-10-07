@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Submit Squid Game Answer</title>
+  </head>
+  <body>
+    <h1>Squid Game Answer Submission</h1>
+    <p>
+      Fill in your answer and name, then click the "Submit" button to send your
+      answer to the API.
+    </p>
+
+    <label for="answer">Your Answer:</label>
+    <input type="text" id="answer" placeholder="Your answer" /><br /><br />
+
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" placeholder="Your name" /><br /><br />
+
+    <button id="submitButton">Submit</button>
+
+    <script>
+      // JavaScript code goes here
+      document
+        .getElementById("submitButton")
+        .addEventListener("click", function () {
+          const yourAnswer = document.getElementById("answer").value;
+          const yourName = document.getElementById("name").value;
+
+          const apiUrl =
+            "https://customer-api.krea.se/coding-tests/api/squid-game";
+          const payload = {
+            answer: yourAnswer,
+            name: yourName,
+          };
+          const headers = {
+            "Content-Type": "application/json",
+          };
+
+          fetch(apiUrl, {
+            method: "POST",
+            headers: headers,
+            body: JSON.stringify(payload),
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              console.log("Request was successful!");
+              console.log("Response:", data);
+              alert(
+                "Request was successful! Check the browser console for the response."
+              );
+            })
+            .catch((error) => {
+              console.error("Request failed:", error);
+              alert(
+                "Request failed! Check the browser console for error details."
+              );
+            });
+        });
+    </script>
+  </body>
+</html>
