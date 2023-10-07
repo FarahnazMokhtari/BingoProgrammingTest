@@ -11,6 +11,7 @@ The purpose of this test is to see what data structures and implementation is us
 Test Input data
 This is the test input data that is mentioned in the puzzle above. Just so it is easy to copy/paste input data into your code, when building your solution.
 
+~~~
 Draw number: 
 7,4,9,5,11,17,23,2,0,14,21,24,10,16,13,6,15,25,12,22,18,20,8,19,3,26,1
 
@@ -745,5 +746,8 @@ Boards:  [
           [12, 40, 3, 0, 30],
           [46, 50, 48, 76, 5],
         ]
+
+~~~
+
 Final score: 
 <This is the score you should produce>
