@@ -749,5 +749,4 @@ Boards:  [
 
 ~~~
 
-Final score: 
-<This is the score you should produce>
+Final score: ???
